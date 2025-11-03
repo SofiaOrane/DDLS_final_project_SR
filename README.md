@@ -3,7 +3,7 @@
 # Spatial Transcriptomics Analysis of Mouse Colon
 
 ## Overview
-This project investigates how the presence of microbiota (Specific Pathogen-Free - SPF vs. Germ-Free - GF) alters the spatially organized transcriptomic programs in the mouse colon. Utilizing the GSE245274 dataset, we employ a modular computational pipeline (MCP) that combines unsupervised and supervised modeling techniques to understand host‚Äìmicrobe interactions, tissue architecture, and immune regulation. The primary goal is to identify spatially resolved molecular changes driven by the microbiota.
+This project investigates how the presence of microbiota (Specific Pathogen-Free - SPF vs. Germ-Free - GF) alters the spatially organized transcriptomic programs in the mouse colon. Utilizing the GSE245274 dataset, we employ a modular computational pipeline (MCP) that combines unsupervised and supervised modeling techniques to understand host-microbe interactions, tissue architecture, and immune regulation. The primary goal is to identify spatially resolved molecular changes driven by the microbiota.
 
 ## Scientific Question
 How does the presence of microbiota (SPF vs GF) alter the spatially organized transcriptomic programs in the mouse colon?
