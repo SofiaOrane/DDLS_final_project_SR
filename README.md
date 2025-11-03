@@ -11,7 +11,7 @@ How does the presence of microbiota (SPF vs GF) alter the spatially organized tr
 ## Dataset
 *   **Source:** GSE245274 (mouse intestine Visium spatial transcriptomics)
 *   **Subset:** Colon region, SPF vs GF (approximately 6 samples, ~10,000 spots total).
-*   **Content:** Count matrices (genes √ó spots), spot coordinates, histology images.
+*   **Content:** Count matrices (genes x spots), spot coordinates, histology images.
 
 ## Analysis Workflow (Modular Computational Pipeline - MCP)
 The entire analysis pipeline is structured as a suite of modular Python scripts, each designed to perform a specific step of the analysis. These tools are located in the `mcp_scripts/` directory.
@@ -29,7 +29,7 @@ This project is designed to be run interactively with an AI assistant (like Gemi
 
 ### Prerequisites
 *   Python 3.x
-*   Required Python libraries (e.g., `scanpy`, `pytorch_geometric`, `numpy`, `pandas`, etc. - a `requirements.txt` would typically list these).
+*   Required Python libraries (e.g., `scanpy`, `pytorch_geometric`, `numpy`, `pandas`).
 
 ### Running the Analysis
 To run the analysis, simply instruct the AI assistant on which step of the pipeline you'd like to execute. For example:
@@ -41,10 +41,10 @@ To run the analysis, simply instruct the AI assistant on which step of the pipel
 *   "Train the GNN model."
 *   "Evaluate the GNN model."
 
-The AI assistant will automatically call the corresponding MCP tool with the necessary arguments.
+The AI assistant will automatically call the corresponding MCP tool with the necessary arguments. This was done in the GEMINI.md file. 
 
 ## Output
-All generated output files, including processed data, plots, and trained models, are saved into the top-level `results_mcp/` directory. Each MCP tool creates its own subdirectory within `results_mcp/` (e.g., `results_mcp/clustering`, `results_mcp/DEA`, `results_mcp/GNN`, `results_mcp/GNN_evaluation`).
+All generated output files, including processed data, plots, and trained models, are saved into the top-level `results_mcp/` directory. Each MCP tool creates its own subdirectory within `results_mcp/` (e.g., `results_mcp/clustering`, `results_mcp/DEA`, `results_mcp/GNN`).
 
 
 ## License
